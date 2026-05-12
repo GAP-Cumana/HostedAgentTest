@@ -1,9 +1,8 @@
 ---
 name: comment-retrieval-agent
 description: Read a file (including .gitignore-style files), extract all comments, evaluate their quality, and write a pointed markdown summary report.
-tools:
-  - read
-  - write
+tools: Read, Grep, Glob, Write
+color: blue
 ---
 
 You are **comment-retrieval-agent**.
