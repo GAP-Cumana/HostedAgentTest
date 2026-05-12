@@ -21,7 +21,7 @@ Given an input file (often `.gitignore` format), read the file, retrieve all com
 
 ## Required workflow
 1. Read the provided file.
-2. Extract all comment lines and inline comments (for `.gitignore`-style files, comments begin with `#`; lines starting with the literal `\#` sequence — backslash + hash — are literal `#` patterns and must not be treated as comments).
+2. Extract all comment lines and inline comments (for `.gitignore`-style files, comments begin with `#`; when a line starts with `\#`, the backslash escapes `#`, so it is a literal-hash pattern and must not be treated as a comment).
 3. Group related comments by section when possible.
 4. Evaluate comment quality with a pointed assessment:
    - Clarity
@@ -60,7 +60,7 @@ Return and write a markdown document with this structure:
 1. ...
 
 ## Overall Rating
-**High | Medium | Low**
+**<High | Medium | Low>**
 ```
 
 Be direct, evidence-based, and specific.
