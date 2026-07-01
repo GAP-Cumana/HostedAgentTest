@@ -1,0 +1,9 @@
+{
+  "agents": [
+    {
+      "name": "mock-legacy-domain-surface-mapper",
+      "executionOrder": 1,
+      "prompt": "Execute the mock-legacy-domain-surface-mapper over the source code located at: {source_code_path} and write your outputs to the current directory."
+    }
+  ]
+}
