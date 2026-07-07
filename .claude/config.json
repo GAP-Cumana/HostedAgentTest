@@ -1,9 +1,14 @@
 {
   "agents": [
     {
-      "name": "mock-legacy-domain-surface-mapper",
+      "name": "legacy-domain-surface-mapper",
       "executionOrder": 1,
-      "prompt": "Execute the mock-legacy-domain-surface-mapper over the source code located at: {source_code_path} and write your outputs to the current directory."
+      "prompt": "Execute the legacy-domain-surface-mapper over the source code located at: {source_code_path} and write your outputs to the current directory."
+    },
+    {
+      "name": "bounded-context-synthesizer",
+      "executionOrder": 2,
+      "prompt": "Execute the bounded-context-synthesizer agent over the previously generated documentation, located at /docs in the current directory."
     }
   ]
 }
